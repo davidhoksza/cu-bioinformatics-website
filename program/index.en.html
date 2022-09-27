@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage of Bioinformatics at CU">
+    <meta name="keywords" content="bioinformatics, prague, charles university">
+    <meta name="author" content="David Hoksza">
+    <meta name="robots" content="index,follow">
+    <meta name="copyright" content="Faculty of Mathematics and Physics, Charles University">
+
+    <title>Bioinformatics at Charles University</title>
+
+	<LINK REL="SHORTCUT ICON"	HREF="img/icon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-61114879-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script>
+        function ellipsis (id) {
+            if (id == "what-to-study")
+                text = "We prepared for you a bioinformatics study program consisting of bachelor's and follow-up master's degree. The program will guide you through the dynamically evolving bioinformatics field starting with the biology, computer science and mathematics foundations going through macromolecule structure analysis and function, machine learning and systems modeling up to advanced bioinformatics areas such as DNA sequencing and analysis, structural bioinformatics or (computational) drug discovery. You will learn how to work in the lab as well as how to develop software systems. The study in the bachelor's degree is secured half and half by Faculty of Science and Faculty of Mathematics and Physics, and this fact is also reflected in the composition of the courses. When teaching bioinformatics, we do not put emphasis on either computer science or biology, but we strive for true synergy. The master's degree is then provided partially by experts from European Molecular Biology Laboratory (EMBL) Heidelberg and Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG) Dresden.";
+
+            if (id == "study-uk")
+                text = "Study at Charles University not only gives you access to a wide range of courses, but also gives you the chance to spend some time at the top foreign research institutions. But the university life is not just study and therefore Charles University also offers many sport and social activities.";
+
+            if (id == "know-how")
+                text = "After finishing the bachelor studies you will understand biological process and the underlying data and you will be able to design and implement software tools dealing with these data. However, the spectrum of courses is designed in such a way that you won't have even the slightest problem to find a career as a programmer, data expert or technician in a diagnostic or research laboratory." +
+                    "<br/><br/>Unique combination of biological and informatics skills allows the graduates of the master's program to find a career in areas requiring knowledge of the development of bionformatics systems that can be used in academia, public sector or industry. The graduates are well prepared for the follow-up doctoral studies of bioinformatics or related biology-related or informatics specializations. They will be able to analyze sequencing of other types of big data comming not only from hospitals and other medical facilities. Moreover, the graduates can find career in pharmaceutical industry or in biotechnological companies specializing on agriculture and other fields.";
+
+            var myid = document.getElementById(id);
+            if (myid.innerHTML.indexOf("...") != -1) myid.innerHTML = text
+            else myid.innerHTML = text.substring(0, 280) + '...';
+        }
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+	<div id="top-menu">
+		<a href="index.html" class="btn btn-dark btn-lg toggle">CZ</a>
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+	</div>
+
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Bioinformatics at CU</a>
+            </li>
+            <li>
+                <a href="#bioinformatics">What is bioinformatics</a>
+            </li>
+            <li>
+                <a href="#program">What do we teach</a>
+            </li>
+            <li>
+                <a href="#projects">What will you know</a>
+            </li>
+            <li>
+                <a href="#study">Studying at CU</a>
+            </li>
+            <li>
+                <a href="#admissions">How to apply</a>
+            </li>
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Bioinformatics at Charles University in Prague</h1>
+            <h3>Information about the <a href="http://www.cuni.cz/" class="header-link" target="_blank">Charles university</a> bioinformatics study program provided in cooperation with <a href="http://www.embl.de/" class="header-link" target="_blank">European Molecular Biology Laboratory (EMBL) Heidelberg </a> and <a href="https://www.mpi-cbg.de/home/" class="header-link" target="_blank">Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG) Dresden</a></h3>
+            <br>
+            <a href="#bioinformatics" class="btn btn-dark btn-lg">What is bioinformatics</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="bioinformatics" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-justify">
+					<h2> Bioinformatics is an interdisciplinary field that combines informatics and biology to study biological data, mainly nucleic acids and proteins.</h2>
+					<p class="lead">
+						The 21st century biology takes advantage of a major progress in many methodological approaches including genomics and proteomics. This has led to an unprecedented growth of valuable biological data. The speed of sequencing of DNA (the major source of biological data today) has grown about 400x in the last 15 years. Other areas of biology are also shifting towards methods that generate large quantities of data and it is therefore hardly surprising that the amount biological data stored at the European Bioinformatics Institute (EBI), the major repository of biological data in Europe, has grown  to 120 petabytes in 2017. The amount of  the data deposited at the EBI doubled in less than two years.
+					</p>
+					<p class="lead">
+						Bioinformatics is a relatively new field with the aim of making sense of the growing number of biological data, it concentrates also on deposition and distribution of biological data.  The importance of bioinformatics for basic biological research, drug development, medical diagnostics or agriculture is, therefore, growing with every sequenced nucleotide and with every solved 3D structure and it is expected to grow further. There will be also a growing demand for experts (bioinformaticians) who can use existing bioinformatics algorithms or develop new ones.
+					</p>
+					<p class="lead">
+						Bioinformatics is a multidisciplinary field that combines biology, statistics and informatics – and this is reflected both in the bachelor and the master study programme in Bioinformatics.  Two faculties of Charles University in Prague – Faculty of Mathematics and Physics and Faculty of Science join their forces to cover the spectrum of expertise needed to teach bioinformatics. The  master study programme will also include significant contributions from internationally-renowned institutions, namely EMBL Heidelberg and Max-Planck Institute of  Molecular Cell Biology and Genetics, Dresden to ensure that wide spectrum of bioinformatics methods and approaches is well covered and to provide the students an international perspective to promising and rapidly growing field of bioinformatics and computational biology.
+					</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>What should I know about studying bioinformatics at Charles University?</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+	                                <i class="fa fa-circle fa-stack-2x"></i>
+	                                <i class="fa fa-book fa-stack-1x text-primary"></i>
+                            	</span>
+                                <h4>
+                                    <strong>What will I study?</strong>
+                                </h4>
+                                <p id="what-to-study" onclick="ellipsis('what-to-study')"></p><br/>
+								<script type="text/javascript"> ellipsis("what-to-study"); </script>
+                                <a href="#program" class="btn btn-light">Study plan</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>What can CU offer me?</strong>
+                                </h4>
+								<p id="study-uk" onclick="ellipsis('study-uk')"></p><br/>
+								<script type="text/javascript"> ellipsis("study-uk"); </script>
+
+                                <a href="#study" class="btn btn-light">Study at CU</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>What will I be able to do?</strong>
+                                </h4>
+
+								<p id="know-how" onclick="ellipsis('know-how')"></p><br/>
+								<script type="text/javascript"> ellipsis("know-how"); </script>
+
+                                <a href="#projects" class="btn btn-light">Examples of projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+	<!-- Program -->
+    <section id="program" class="about">
+
+    	<!--
+    <aside class="program">
+        <div class="text-vertical-center">
+            <h1>Studijní plán</h1>
+        </div>
+    </aside>
+-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Bachelor degree plan</h2>
+
+                    <h4>Obligatory courses</h4>
+                    <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Course</th>
+				        <th >Recomended year</th>
+				        <th>Semester (Winter/Summer)</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI057">Linear algebra I</a></td>
+				    		<td class="course-table-year">1</td>
+				    		<td class="course-table-semester">W</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDMI089">Combinatorics for bioinformaticians</a></td>
+				    		<td>1</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG030">Programming I</a></td>
+				    		<td>1</td>
+				    		<td>W</td>
+				    	</tr>
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG062">Algorithmization</a></td>
+                            <td>1</td>
+                            <td>Z</td>
+                        </tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P31">Biology of the Cell</a></td>
+				    		<td>1</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MC260P54">General Chemistry</a></td>
+				    		<td>1</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI058">Linear algebra II</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NTIN060">Algorithms and Data Structures I</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG031">Programming  II</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI054">Mathematical Analysis I</a></td>
+                            <td>1</td>
+                            <td>S</td>
+                        </tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P88">The basis of Bioinformatics</a></td>
+                            <td>1</td>
+                            <td>S</td>
+                        </tr>
+
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NTIN061">Algorithms and Data Structures II</a></td>
+                            <td>2</td>
+                            <td>W</td>
+                        </tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140P17">Genetics</a></td>
+                            <td>2</td>
+                            <td>W</td>
+                        </tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P34">Biochemistry - The Principles</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB170P55">Introduction to evolutionary biology</a></td>
+                            <td>2</td>
+                            <td>W</td>
+                        </tr>
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDBI025">Database systems</a></td>
+                            <td>2</td>
+                            <td>W</td>
+                        </tr>
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NSWI177">Introduction to Linux</a></td>
+                            <td>2</td>
+                            <td>S</td>
+                        </tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P101 ">Bioinformatical databases and application</a></td>
+                            <td>2</td>
+                            <td>S</td>
+                        </tr>
+                        <tr class="info">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI059">Probability and Statistics 1</a></td>
+                            <td>2</td>
+                            <td>S</td>
+                        </tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140P71">Essentials in molecular biology</a></td>
+                            <td>2</td>
+                            <td>S</td>
+                        </tr>
+                        <tr class="success">
+                            <td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140C71">Practical course essentials in molecular biology I</a></td>
+                            <td>2</td>
+                            <td>S</td>
+                        </tr>				    	
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140P37">Structure and Properties of Biopolymers</a></td>
+				    		<td>2</td>
+				    		<td>S</td>
+				    	</tr>				    	
+				    	
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDBI044">Algorithms, databases and tools in bioinformatics</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB170P112">Proteomics</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr>
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB100BP5">Bachelor project</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    </tbody>
+				  </table>
+
+				  <h4>Elective courses</h4>
+                    <table class="table">
+				    <tbody>
+				    	<tr>
+				    		<td colspan="3" class="program_3col">Programming</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG041">Programming in C++</a></td>
+				    		<td class="course-table-year">2</td>
+				    		<td class="course-table-semester">W</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG013">Programming in Java</a></td>
+				    		<td>2</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG035">Programming in C#</a></td>
+				    		<td>2</td>
+				    		<td>W</td>
+				    	</tr>				    	
+				    	<tr>
+				    		<td colspan="3" class="program_3col">Practical courses</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P31">Biology of the Cell</a></td>
+				    		<td>2</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150C04">Practical Course of Biochemistry</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB130C30">Practicle course Plant Cell</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150C07">Developmental Biology - a practical course</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+
+				    	<tr>
+				    		<td colspan="3" class="program_3col">Other FMP</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NSWI178">Principles of Computers for Bioinformatics</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>						
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDMI011">Combinatorics and Graph Theory</a></td>
+				    		<td>1</td>
+				    		<td>S</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI055">Mathematical Analysis 2</a></td>
+				    		<td>2</td>
+				    		<td>W</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG036">Data formats</a></td>
+				    		<td>2</td>
+				    		<td>W</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NAIL119">Nature Inspired Algorithms</a></td>
+				    		<td>2</td>
+				    		<td>S</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NTIN087">Text algorithms</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>						
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG061">Bioinformatics project</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>						
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NSWI141">Introduction to Networking</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+						<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NTIN071">Automata and Grammars</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>				    	
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG051">Advanced C++ Programming</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG038">Advanced C# Programminga></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="info">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG021">Advanced Java Programming</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+
+				    	<tr>
+				    		<td colspan="3" class="program_3col">Other FS</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P77A	">Histology/Cytology</a></td>
+				    		<td>2</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P11">Developmental Biology</a></td>
+				    		<td>2</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140P86">Methods of functional genomics</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB130P34">Plant cell biology</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P14B">Immunology</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB170P24">Evolutionary genetics</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P07">Basics of Animal Physiology</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB130P46">Plant Molecular Genetics</a></td>
+				    		<td>3</td>
+				    		<td>W</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB110P50">Forensic genetics</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    	<tr class="success">
+				    		<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB170P75">Ecology</a></td>
+				    		<td>3</td>
+				    		<td>S</td>
+				    	</tr>
+				    </tbody>
+				  </table>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Master degree plan</h2>
+
+					<h4>Obligatory courses</h4>
+					<table class="table">
+						<thead>
+						<tr>
+							<th>Course</th>
+							<th >Recommended year</th>
+							<th>Semester (Winter/Summer)</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P111">Genomics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P133">Mathematical modelling in bioinformatics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB160P21">Molecular phylogenetics and systematics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB160C21">Practical course of molecular phylogenetics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPFL129">Introduction to Machine Learning</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P114E">Biological imaging and image analysis</a> (<a href="https://www.mpi-cbg.de/home/">MPI Dresden</a>)</td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr><tr class="warning">
+						<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMMA706">	Applied differential equations</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>						
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151S01">Bioinformatics - seminar</a></td>
+							<td class="course-table-year">1,2</td>
+							<td class="course-table-semester">W/S</td>
+						</tr>
+						
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P112E">Genome-scale metabolic models</a> (<a href="https://www.embl.org/">EMBL Heidelberg</a>)</td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P115E">Spatiotemporal modeling and simulation of biological systems</a>(<a href="https://www.mpi-cbg.de/home/">MPI Dresden</a>)</td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MC260P86">Structural bioinformatics</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB151P98">Drug design</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>						
+						<tr class="warning">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB100E1">Diploma project</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W/S</td>
+						</tr>
+						</tbody>
+					</table>
+
+					<h4>Elective courses</h4>
+					<table class="table">
+						<tbody>
+
+						<tr>
+							<td colspan="3" class="program_3col">Biology</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P85">Epigenetics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P09">Proteins of Signaling Cascades</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB162P25">Genome evolution</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB140P29">Cell cycles and signalling</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB130P01">Methods of image analysis and sterology for biologists</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB170P66">Genetic methods in zoology</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=MB150P91E">RNA structure and function</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="success">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NBCM308">Introduction to Protein Structure Studies</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>						
+
+						<tr>
+							<td colspan="3" class="program_3col">Informatics</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NSWI142">Web Applications Programming</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">W</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NAIL120">Introduction to Artificial Intelligence</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPFL114">Deep learning</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>						
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDBI043">Text Search Techniques</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NDBI042">Data Visualization Techniques</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NAIL107">Machine Learning in Bioinformatics</a></td>
+							<td class="course-table-year">1</td>
+							<td class="course-table-semester">S</td>
+						</tr>						
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMSA407">Linear Regression</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">W</td>
+						</tr>						
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NMAI061">Methods of Mathematical Statistics</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						<tr class="info">
+							<td><a href="https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=NPRG043">Recommended Programming Practices</a></td>
+							<td class="course-table-year">2</td>
+							<td class="course-table-semester">S</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+
+    </section>
+
+
+    <!-- Study -->
+    <section id="study" class="study">
+    	<aside class="study-header">
+        	<div class="text-vertical-center">
+            	<h1><span class="img-rounded">Study at Charles University</span></h1>
+        	</div>
+    	</aside>
+    	<div class="container">
+            <div class="row">
+            	<div class="col-lg-10 col-lg-offset-1 text-center">
+            		<h2>Courses</h2>
+					The study plan consists of a balanced mixture of lectures on biology, computer science and mathematics that cover the full range of knowledge that each bioinformatician should master. As the involvement of Faculty of Science and Faculty of Mathematics and Physics is equal, you acquire the necessary theoretical background, but you will also have access to laboratories, both biological and computer ones. As part of the biological courses, you will learn how to work in the lab, and the computer science courses and exercises, will teach you how to program, develop algorithms and complex software systems. The advantage of studying at Charles University is the breadth of courses you have access to. If you would like to take different lectures from those we prepared for you within the bioinformatics curriculum, you can pick any of the courses from the variety of subjects taught at Charles University.
+            	</div>
+            </div >
+            <div class="row">
+            	<div class="col-lg-10 col-lg-offset-1 text-center">
+            		<h2>Scholarship</h2>
+					Also those who want to see the world won't get a raw deal. Our faculties have, within the <a href="http://www.naep.cz/erasmus">Erasmus</a> program, contracts for tens three, six or twelve month stays with many European universities.
+					Thansk to our cooperation with <a href="http://www.embl.org/" target="_blank">EMBL in Heidelberg</a> and <a href="https://www.mpi-cbg.de/home/" target="_blank">MPI in Dresden</a>, our students are also given the opportunity to visit these prestigious institutions.
+            	</div>
+            </div >
+            <div class="row">
+            	<div class="col-lg-10 col-lg-offset-1 text-center">
+            		<h2>Free time</h2>
+					Learning is not everything. Therefore, Charles University provides also many opportunities for <a href="http://ktv.mff.cuni.cz/"> sports activities </a> (winter and summer sports courses, the possibility to visit university sports grounds), and <a href="http://spolek.matfyzak.cz/">social events</a> (beánie, ball, competitions, tournaments).
+            	</div>
+            </div >
+        </div>
+    </section>
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="portfolio">
+    	<aside class="projects">
+        	<div class="text-vertical-center">
+            	<h1><span class="img-rounded">Selected projects at Charles University</span></h1>
+        	</div>
+    	</aside>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2 style="padding:20px">Examples of bioinformatics projects developed at CU with students participation</h2>
+
+                    <div class="list-group">
+						<a href="https://github.com/cusbg/traveler" class="list-group-item">
+							<h4 class="list-group-item-heading">Traveler - Template-based RnA VisuaLization</h4>
+							<p class="list-group-item-text">Visualization of RNA secondary structure using templates.</p>
+						</a>
+						<a href="https://github.com/rdk/p2rank" class="list-group-item">
+							<h4 class="list-group-item-heading">p2rank</h4>
+							<p class="list-group-item-text">Ligand-binding site prediction based on machine learning</p>
+						</a>
+                    	<a href="http://setter.projekty.ms.mff.cuni.cz/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">SETTER (SEcondary sTructure-based TERtiary Structure Similarity Algorithm)</h4>
+					    	<p class="list-group-item-text">A web server for RNA structure similarity search</p>
+					  	</a>
+                    	<a href="http://siret.ms.mff.cuni.cz/simtandem" class="list-group-item">
+					    	<h4 class="list-group-item-heading">Simtandem</h4>
+					    	<p class="list-group-item-text">A web server for protein sequence identification from mass spectrometry data</p>
+					  	</a>
+                    	<a href="https://www.assembla.com/spaces/molpher/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">Molpher - Molecular morphing</h4>
+					    	<p class="list-group-item-text">Software tool for chemical space exploration</p>
+					  	</a>
+					  	<a href="http://rpredictor.ms.mff.cuni.cz/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">rPredictor</h4>
+					    	<p class="list-group-item-text">A tool, web server and database for RNA secondary structure prediction </p>
+					  	</a>
+						<a href="http://hcvivdb.org/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">HCVIVdb</h4>
+					    	<p class="list-group-item-text">A database of published variations observed within the internal ribosome entry site (IRES) of the hepatitis C Virus</p>
+					  	</a>
+					  	<a href="http://iresite.org" class="list-group-item">
+					    	<h4 class="list-group-item-heading">IRESite (Internal Ribosome Entry Site)</h4>
+					    	<p class="list-group-item-text">The database of experimentally verified Internal Ribosome Entry Site (IRES) structures</p>
+					  	</a>
+					  	<a href="http://khresmoi.eu/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">khresmoi</h4>
+					    	<p class="list-group-item-text">A multilingual multimodal search and access system for biomedical information and documents</p>
+					  	</a>
+					  	<a href="http://www.lekovaencyklopedie.cz/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">Czech drugs encyclopedia</h4>
+					    	<p class="list-group-item-text">Encyclopedia of active ingredients, their indications, contraindications, pharmacological effects and interactions</p>
+					  	</a>
+					  	<a href="https://sites.google.com/site/susnoimac/home" class="list-group-item">
+					    	<h4 class="list-group-item-heading">SUSNOIMAC</h4>
+					    	<p class="list-group-item-text">Simulator Using Spiking Neurons Originally Intended for Modelling Auditory Cortex</p>
+					  	</a>
+
+					  	<!--<a href="http://siret.ms.mff.cuni.cz/sir" class="list-group-item">-->
+					    	<!--<h4 class="list-group-item-heading">SIR - Smart Image Retrieval</h4>-->
+					    	<!--<p class="list-group-item-text">Webový nástroj pro exploraci obrázků.</p>-->
+					  	<!--</a>-->
+					  	<!--<a href="http://www.oskee.wz.cz/stranka/oskee.php?id=1223682166" class="list-group-item">-->
+					    	<!--<h4 class="list-group-item-heading">Flying Samurai</h4>-->
+					    	<!--<p class="list-group-item-text">Simulátor leteckých soubojů z 1. světové války.</p>-->
+					  	<!--</a>-->
+					  	<!--<a href="http://cs3889.cz/" class="list-group-item">-->
+					    	<!--<h4 class="list-group-item-heading">Československo 38–89</h4>-->
+					    	<!--<p class="list-group-item-text">Série výukových simulací, které kombinují prvky interaktivního komiksu a počítačových her.</p>-->
+					  	<!--</a>					  	-->
+					</div>
+                    <!--
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                	-->
+                    <!-- /.row (nested) -->
+                    <!--<a href="#" class="btn btn-dark">View More Items</a>-->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside id="admissions" class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>What do I need to do to be accepted?</h3>
+                    <p id="call-to-action-text">
+						To be accepted for the bioinformatics study program at Charles University, the application must be submitted to the Faculty of Science by the end of February (usually; see the link below for the exact date). The admission exam is held at the Facutly of Mathematics and Physics (FMP) and its content is the same as for the "Bachelor's study program in Mathematics and Informatics" at FMP. It consits of
+                    	<a href="http://www.mff.cuni.cz/studium/uchazec/#toc-co-cekat-od-prijimaci-zkousky" target="_blank">
+                    	ten tasks </a> testing suitability for the bioinformatics study program (logical thinking, high school mathematics).
+                    </p>
+                    <a href="https://www.natur.cuni.cz/eng/study/applicants/admission/admission" class="btn btn-lg btn-light">Admission procedure details</a>
+                    <a href="https://is.cuni.cz/studium/eng/prijimacky/" class="btn btn-lg btn-dark">Application</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+
+                    <h4><strong>Are you missing any information here? Do not hesitate to contact us!</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <!--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>-->
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:bioinformatika@matfyz.cuni.cz">bioinformatika@matfyz.cz</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/bioinformatika.uk" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Matematicko-fyzikální fakulta Univerzity Karlovy v Praze, 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+		// Closes the sidebar menu
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Opens the sidebar menu
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Scrolls to the selected menu item on the page
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+    </script>
+
+</body>
+
+</html>
