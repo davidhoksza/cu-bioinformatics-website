@@ -1,0 +1,25 @@
+#funding img {
+    width: 30%;
+
+}
+
+#funding .logos {
+    padding-top: 20px;
+}
+
+.bg-blue-opaque {
+    background: rgba(184, 215, 236, 0.4)
+}
+
+#news .date {
+    font-weight: lighter;
+}
+
+#news .info {
+    padding-left: 30px;
+}
+
+section{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
