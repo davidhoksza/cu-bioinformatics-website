@@ -33,6 +33,32 @@
 
 <body>
 
+    <!-- Navigation -->
+	<div id="top-menu">		
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+	</div>
+
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Programme</a>
+            </li>
+            <li>
+                <a href="#bioniformatics-and-computational-biology">Bioinformatics</a>
+            </li>
+            <li>
+                <a href="#research-areas">Research areas</a>
+            </li>
+            <li>
+                <a href="#course-of-study">Course of study</a>
+            </li>            
+            <li>
+                <a href="#admission-procedure">Admission procedure</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- Header -->
     <header id="top" class="header header-phd">
         <div class="text-vertical-center">
@@ -46,7 +72,7 @@
         <div class="container lead">
             <div class="row">
                 <div class="col-lg-12 text-justify">
-                    <h2 class="text-center">Bioinformatics and computational biology</h2>
+                    <h1 id="bioniformatics-and-computational-biology" class="text-center">Bioinformatics and computational biology</h1>
                     <p class="lead">                        
                         Bioinformatics and computational biology are multidisciplinary disciplines on the interface of computer science 
                         (especially algorithms and software development, data engineering), mathematics (especially probability, statistics, and mathematical modeling),
@@ -67,28 +93,76 @@
                     <p class="lead">
                         Furthermore, pursuing a PhD in bioinformatics can lead to diverse career opportunities, including academia, industry, government, and healthcare. With the growing demand for data-driven solutions in biology and medicine, bioinformatics PhD graduates are highly sought after in both the public and private sectors.
                     </p>
-                    <h3 class="text-center">Research areas</h3>
+                    <h2 id="research-areas" class="text-center">Research areas</h2>
                         <p class="lead">
                             Although there is no widely accepted categorization of the domain, for the purpose of our study program, we partition the field into the following non-exclusive categories.
                         </p>
                     
 
-                        <h4>Computational genomics</h4>                    
-                        <h4>Structural bioinformatics</h4>                    
-                        <h4>Phylogenetics</h4>
-                        <h4>Population genetics</h4>                    
-                        <h4>Systems biology</h4>
-                        <h4>Neuroinformatics</h4>
-                        <h4>Bioimaging</h4>
-                        <h4>Computational drug discovery</h4>
-
+                        <h3>Computational genomics</h3>        
+                        <div>
+                            Computational genomics combines computer science, statistics, and biology to analyze and interpret large-scale genomic data. It involves the development and application of computational algorithms, tools, and techniques to understand the structure, function, and evolution of genomes.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="https://www.sanger.ac.uk/person/danecek-petr/">Petr Daněček</a></li>                                
+                            </ul>
+                        </div>            
+                        <h3>Structural bioinformatics</h3>
+                        <div>
+                            <div class="topic-description">Description: </div> Structural bioinformatics is the study of the three-dimensional structure of biological molecules and their interactions. It involves the use of computational tools and techniques to predict and analyze the structures of proteins, nucleic acids, and other macromolecules, and to understand how they interact with each other and with small molecules.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="https://bioinformatics.cuni.cz/cusbg/">Charles University Structural Bioinformatics Group (CUSBG)</a></li>
+                                <li><a href="https://biorecognition.structbio.org/">Bohdan Schneider's Lab</a></li>
+                            </ul>
+                        </div>
+                        <h3>Phylogenetics</h3>
+                        <div>
+                            Phylogenetics is the study of the evolutionary relationships between different species or groups of organisms. It involves the use of computational tools and techniques to analyze molecular data, such as DNA sequences, to reconstruct evolutionary trees and infer the relationships between different species.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="http://www.protistologie.cz/hampllab/index.html">Evolutionary protistology group</a></li>                                
+                            </ul>
+                        </div>
+                        <h3>Population genetics</h3>
+                        <div>
+                            Population genetics is the study of the genetic variation within and between populations of organisms. It involves the use of statistical methods and computational tools to analyze genetic data, such as DNA sequences and SNP data, to understand the patterns of genetic variation and the evolutionary forces that shape them.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="http://web.natur.cuni.cz/~radkas/">Group of Population and Speciation Genetics</a></li>                                
+                            </ul>
+                        </div>
+                        <h3>Systems biology</h3>
+                        <div>
+                            Systems biology combines biology, mathematics, and computer science to understand the complex behavior of biological systems at the molecular, cellular, and organismal levels. It involves the use of computational models and simulations to study the interactions between different components of biological systems, and to predict the behavior of these systems under different conditions.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="https://lab141.mbucas.cz/">Laboratory of Environmental Microbiology</a></li>                                
+                            </ul>
+                        </div>
+                        <h3>Neuroinformatics/Computational neuroscience</h3>
+                        <div>
+                            Neuroinformatics is the application of computational methods and tools to study the structure and function of the nervous system. It involves the development of databases, algorithms, and models to analyze and interpret large-scale data from a variety of sources, including neuroimaging, electrophysiology, and behavioral experiments.
+                            <div class="topic-groups-label">Groups/People: </div> 
+                            <ul>
+                                <li><a href="http://csng.mff.cuni.cz/">Computational Systems Neuroscience Group (CSNG)</a></li>                                
+                            </ul>
+                        </div>
+                        <h3>Bioimaging</h3>
+                        <div>
+                            Bioimaging is the use of imaging techniques, such as microscopy and MRI, to visualize biological structures and processes. It involves the development of computational algorithms and tools to analyze and interpret the images, and to extract quantitative information about the biological systems being studied.
+                        </div>
+                        <h3>Computational drug discovery</h3>
+                        <div>
+                            Computational drug discovery is the use of computational methods and tools to identify and design new drugs. It involves the use of molecular modeling, virtual screening, and other computational techniques to predict the binding affinity and pharmacological properties of potential drug candidates, and to optimize their structure and properties to improve their efficacy and safety.
+                        </div>
                     
-                    <h3 class="text-center">Course of study</h3>
+                    <h2 id="course-of-study" class="text-center">Course of study</h2>
                         <p class="lead">
                             Unlike Bachelor's or Master's studies, doctoral studies which are more oriented towards on obtaining foundational knowledge and skills and are therefore more course-oriented, PhD studies are highly specialized. To earn a PhD degree you are expected to develop expertise in a specific area of the discipline, to make original contributions to your field of study through independent research, publish the results of your research, write a dissertation about the results, and defend your work. The following sections describe various aspects of the study program.
                         </p>
                     
-                    <h4 class="text-center">Coursework</h3>
+                    <h3 class="text-center">Coursework</h3>
                         <p class="lead">
                             As we strongly believe that the primary focus of a PhD studies should be on research rather than coursework. Therefore, there is only one obligatory course in the programme, the <a href="https://is.cuni.cz/studium/predmety/index.php?id=8568bfaf6e4d9562abd8c4769ad69a78&tid=&do=predmet&kod=NSWI201">Doctoral bioinformatics seminar</a>. The idea of the seminar is for students from different fields of bioinformatics and computational biology to share their insights and knowledge, mutually broadening their views and enriching their research with new insights from related areas which are not directly within  their direct field of expertise.
 
@@ -97,12 +171,12 @@
 
                         
 
-                    <h4 class="text-center">Publications</h3>
+                    <h3 class="text-center">Publications</h3>
                         <p class="lead">
                             In order to be allowed to defend doctoral thesis, the student needs to fulfill the following criteria. A deviation from those criteria is possible but will be considered on an ad-hoc basis. The student needs to have least 2 impacted (<a href="https://www.webofscience.com/wos">WOS</a> or <a href="https://www.scimagojr.com/">SJR</a>) journal publications, with at least one having the student as the first (joint first authorship is fine) or corresponding author. In the case of an exceptionally important article in a top journal such as Nature or Science, one publication is sufficient. This requirement can be replaced in exceptional cases by peer-reviewed conferences (a typical publication format in some fields such as computer science), which must be top conferences in the field (on the order of A or A* conferences according to <a href="https://www.core.edu.au/conference-portal">CORE rating</a>) and quite exceptionally by several manuscripts in Bioarxiv. These results will be recognized ad-hoc.
                         </p>
                     
-                    <h4 class="text-center">Doctoral exam</h3>
+                    <h3 class="text-center">Doctoral exam</h3>
                         <p>
                             It is expected that the exam will be taken no later than during the 5th semester since starting the doctoral studies. The aim of the examination is to evaluate the work done so far and the progress on the dissertation. The aim is therefore not to test knowledge on the basis of a curriculum of a group of courses or fixed lists of topics. There are 2 reasons for this:
                         </p>
@@ -130,17 +204,25 @@
                             <li>Relevant literature within the scope of which knowledge is expected at a minimum (i.e., a necessary condition, not necessarily sufficient)</li>
                         </ol>
 
-                    <h4 class="text-center">Dissertation thesis</h3>
-                        <p class="lead">
-                            TODO
+                    <h3 class="text-center">Dissertation thesis</h3>
+                        <h4 class="text-center">Form of the thesis</h4>
+                        <p>
+                            The preferred form of the thesis is an article-based thesis of papers linked by an overarching research question or theme. The thesis should include an overview introduction of approximately 30-50 pages setting the publications in a broader context. The purpose of the introduction is to provide an overview of the research domain and a summary/discussion of the results and own contributions, which are then detailed in the accompanying papers.
+                        </p>
+                        <h4 class="text-center">Thesis defense</h4>
+                        <p>
+                            The thesis will be reviewed by two oponnents with at least one being from abroad. The thesis defense will include thesis presentation and discussion.
                         </p>
 
-                    <h4 class="text-center">Internship</h3>
-                        <p class="lead">
-                            TODO
+                    <h3 class="text-center">Internship</h3>
+                        <p>
+                            We strongly believe that pursuing an internship abroad can provide PhD students with numerous benefits, including international experience, exposure to different research methods, a professional network, cultural immersion, and enhanced career prospects. It is an excellent opportunity for students to broaden their horizons, gain new perspectives, and develop a set of skills that will be valuable in their future careers.                            
+                        </p>
+                        <p>
+                            For the above reasons, we strongly advise at least a 3-month internship at an abroad institution. If the student does not undergo an internship it needs, the reasons for such a decision need to be explained during the thesis defense.
                         </p>
 
-                    <h3 class="text-center">Admission procedure</h3>
+                    <h2 id="admission-procedure" class="text-center">Admission procedure</h2>
                         <p class="lead">
                             Before you apply for the doctoral study programme in Bioinforamtics and computational biology, we strongly advice you to first find an advisor and agree with them on the 
                             prospective PhD project. Although it is technically possible to submit an admission application without having an agreed upon supervisor we strongly discourage from taking 
@@ -170,6 +252,9 @@
                 <div class="col-lg-12 text-justify">
                     <h2 class="text-center">News</h2>
                     <ul>
+                        <li>
+                            <span class="date">05/2023</span><span class="info">Materials regarding the programme available at the website</span>
+                        </li>
                         <li>
                             <span class="date">02/2023</span><span class="info">We have been holding a bioinformatics academia-industry meetup called <a href="https://www.eventbrite.com/e/bioinformatics-a-bridge-between-industry-and-academia-tickets-514698596357">Bioinformatics - a bridge between industry and academia</a>.</span>
                         </li>
@@ -248,7 +333,39 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
 </body>
 

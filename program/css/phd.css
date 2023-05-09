@@ -23,3 +23,13 @@ section{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+.topic-description {
+    font-style: italic;
+}
+
+.topic-groups-label {
+    font-style: italic;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
