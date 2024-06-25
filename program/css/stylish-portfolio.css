@@ -341,3 +341,8 @@ a:hover {text-decoration: none;}
     /*text-overflow: ellipsis;*/
 /*}*/
 
+/* Industry */
+#industry .topic{
+    font-style: italic;
+}
+
