@@ -346,3 +346,22 @@ a:hover {text-decoration: none;}
     font-style: italic;
 }
 
+/* International */
+#international .activity{
+    font-style: italic;
+}
+
+#international h4 {
+    padding-left: 10px;
+}
+
+#international p {
+    padding-left: 20px;
+
+}
+
+#international ul {
+    padding-left: 50px;
+
+}
+
