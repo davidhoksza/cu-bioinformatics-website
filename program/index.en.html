@@ -44,25 +44,10 @@
 	</script>
 
 	<script>
-        function ellipsis (id) {
-            if (id == "what-to-study")
-                text = "We prepared for you a bioinformatics study programme consisting of bachelor's, follow-up master's and even doctoral degree. The programme will guide you through the dynamically evolving bioinformatics field starting with the biology, computer science and mathematics foundations going through macromolecule structure analysis and function, machine learning and systems modeling up to advanced bioinformatics areas such as DNA sequencing and analysis, structural bioinformatics or (computational) drug discovery. You will learn how to work in the lab as well as how to develop software systems. The study in the bachelor's degree is secured half and half by Faculty of Science and Faculty of Mathematics and Physics, and this fact is also reflected in the composition of the courses. When teaching bioinformatics, we do not put emphasis on either computer science or biology, but we strive for true synergy. The master's degree is then provided partially by experts from European Molecular Biology Laboratory (EMBL) Heidelberg and Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG) Dresden.";
-
-            if (id == "study-uk")
-                text = "Study at Charles University not only gives you access to a wide range of courses, but also gives you the chance to spend some time at the top foreign research institutions. But the university life is not just study and therefore Charles University also offers many sport and social activities.";
-
-            if (id == "know-how")
-                text = "After finishing the bachelor studies you will understand biological process and the underlying data and you will be able to design and implement software tools dealing with these data. However, the spectrum of courses is designed in such a way that you won't have even the slightest problem to find a career as a programmer, data expert or technician in a diagnostic or research laboratory." +
-                    "<br/><br/>Unique combination of biological and informatics skills allows the graduates of the master's and doctoral programme to find a career in areas requiring knowledge of the development of bionformatics systems that can be used in academia, public sector or industry. The graduates are well prepared for the follow-up doctoral studies of bioinformatics or related biology-related or informatics specializations. They will be able to analyze sequencing of other types of big data comming not only from hospitals and other medical facilities. Moreover, the graduates can find career in pharmaceutical industry or in biotechnological companies specializing on agriculture and other fields.";
-
-            var myid = document.getElementById(id);
-            if (myid.innerHTML.indexOf("...") != -1) myid.innerHTML = text
-            else myid.innerHTML = text.substring(0, 280) + '...';
-        }
+		window.language = 'en';
 	</script>
 
-
-
+	<script src="js/custom.js"></script>
 
 </head>
 
@@ -796,23 +781,19 @@
 							<h4 class="list-group-item-heading">Traveler - Template-based RnA VisuaLization</h4>
 							<p class="list-group-item-text">Visualization of RNA secondary structure using templates.</p>
 						</a>
-						<a href="https://github.com/rdk/p2rank" class="list-group-item">
-							<h4 class="list-group-item-heading">p2rank</h4>
+						<a href="https://prankweb.cz/" class="list-group-item">
+							<h4 class="list-group-item-heading">PrankWeb/P2rank</h4>
 							<p class="list-group-item-text">Ligand-binding site prediction based on machine learning</p>
 						</a>
                     	<a href="http://setter.projekty.ms.mff.cuni.cz/" class="list-group-item">
 					    	<h4 class="list-group-item-heading">SETTER (SEcondary sTructure-based TERtiary Structure Similarity Algorithm)</h4>
 					    	<p class="list-group-item-text">A web server for RNA structure similarity search</p>
-					  	</a>
-                    	<a href="http://siret.ms.mff.cuni.cz/simtandem" class="list-group-item">
-					    	<h4 class="list-group-item-heading">Simtandem</h4>
-					    	<p class="list-group-item-text">A web server for protein sequence identification from mass spectrometry data</p>
-					  	</a>
+					  	</a>                    	
                     	<a href="https://www.assembla.com/spaces/molpher/" class="list-group-item">
 					    	<h4 class="list-group-item-heading">Molpher - Molecular morphing</h4>
 					    	<p class="list-group-item-text">Software tool for chemical space exploration</p>
 					  	</a>
-					  	<a href="http://rpredictor.ms.mff.cuni.cz/" class="list-group-item">
+					  	<a href="http://rpredictordb.elixir-czech.cz/" class="list-group-item">
 					    	<h4 class="list-group-item-heading">rPredictor</h4>
 					    	<p class="list-group-item-text">A tool, web server and database for RNA secondary structure prediction </p>
 					  	</a>
@@ -832,23 +813,10 @@
 					    	<h4 class="list-group-item-heading">Czech drugs encyclopedia</h4>
 					    	<p class="list-group-item-text">Encyclopedia of active ingredients, their indications, contraindications, pharmacological effects and interactions</p>
 					  	</a>
-					  	<a href="https://sites.google.com/site/susnoimac/home" class="list-group-item">
-					    	<h4 class="list-group-item-heading">SUSNOIMAC</h4>
-					    	<p class="list-group-item-text">Simulator Using Spiking Neurons Originally Intended for Modelling Auditory Cortex</p>
-					  	</a>
-
-					  	<!--<a href="http://siret.ms.mff.cuni.cz/sir" class="list-group-item">-->
-					    	<!--<h4 class="list-group-item-heading">SIR - Smart Image Retrieval</h4>-->
-					    	<!--<p class="list-group-item-text">Webový nástroj pro exploraci obrázků.</p>-->
-					  	<!--</a>-->
-					  	<!--<a href="http://www.oskee.wz.cz/stranka/oskee.php?id=1223682166" class="list-group-item">-->
-					    	<!--<h4 class="list-group-item-heading">Flying Samurai</h4>-->
-					    	<!--<p class="list-group-item-text">Simulátor leteckých soubojů z 1. světové války.</p>-->
-					  	<!--</a>-->
-					  	<!--<a href="http://cs3889.cz/" class="list-group-item">-->
-					    	<!--<h4 class="list-group-item-heading">Československo 38–89</h4>-->
-					    	<!--<p class="list-group-item-text">Série výukových simulací, které kombinují prvky interaktivního komiksu a počítačových her.</p>-->
-					  	<!--</a>					  	-->
+						<a href="https://ms.biomed.cas.cz/simtandem/" class="list-group-item">
+					    	<h4 class="list-group-item-heading">Simtandem</h4>
+					    	<p class="list-group-item-text">A web server for protein sequence identification from mass spectrometry data</p>
+					  	</a>					  						  	
 					</div>
                     <!--
                     <hr class="small">
@@ -900,12 +868,12 @@
                 <div class="col-lg-12 text-center">
                     <h3>What do I need to do to be accepted?</h3>
                     <p id="call-to-action-text">
-						To be accepted for the bioinformatics study programme at Charles University, the application must be submitted to the Faculty of Science by the end of February (usually; see the link below for the exact date). The admission exam is held at the Facutly of Mathematics and Physics (FMP) and its content is the same as for the "Bachelor's study programme in Mathematics and Informatics" at FMP. It consits of
-                    	<a href="http://www.mff.cuni.cz/studium/uchazec/#toc-co-cekat-od-prijimaci-zkousky" target="_blank">
-                    	ten tasks </a> testing suitability for the bioinformatics study programme (logical thinking, high school mathematics).
+						Please note that the study program is taught in Czech only. <br>
+
+						To apply for the Bioinformatics study program at Charles University, an application must be submitted to the Faculty of Science at Charles University. The entrance exam for the Bachelor's program is held at the Faculty of Mathematics and Physics (MFF UK) and follows the same content as the "Specialized Exam for Bachelor's Programs in Informatics" at MFF UK. The exam consists of <a href="http://www.mff.cuni.cz/studium/uchazec/#toc-co-cekat-od-prijimaci-zkousky" target="_blank"> ten tasks</a> testing the prerequisites for studying the Bioinformatics program (logical thinking, accuracy in expression, high school mathematics). The entrance exam for the Master’s program takes the form of an interview.						
                     </p>
-                    <a href="https://www.natur.cuni.cz/eng/study/applicants/admission/admission" class="btn btn-lg btn-light">Admission procedure details</a>
-                    <a href="https://is.cuni.cz/studium/eng/prijimacky/" class="btn btn-lg btn-dark">Application</a>
+                    <a href="https://natur.cuni.cz/en/admissions" class="btn btn-lg btn-light">Admission procedure details</a>
+                    
                 </div>
             </div>
         </div>
@@ -939,7 +907,7 @@
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Matematicko-fyzikální fakulta Univerzity Karlovy v Praze, 2015</p>
+                    <p id="copyright" class="text-muted">Copyright &copy; Matematicko-fyzikální fakulta Univerzity Karlovy v Praze, </p>
                 </div>
             </div>
         </div>
